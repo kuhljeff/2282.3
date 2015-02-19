@@ -8,10 +8,8 @@ namespace JeffKuhlmeier_Project3
 {
     class Dequeue
     {
-<<<<<<< HEAD
         //testy
-=======
->>>>>>> origin/local
+
         public void popFront()
         {
             throw new System.NotImplementedException();
