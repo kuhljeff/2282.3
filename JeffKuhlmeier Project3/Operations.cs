@@ -14,25 +14,25 @@ namespace JeffKuhlmeier_Project3
 
         public static readonly Dictionary<char, Func<int, int, int>> functions = new Dictionary<char, Func<int, int, int>>()
         {
-            {'+',Add},
-            {'-', Subtract},
-            {'/',Divide},
-            {'*',Multiply}
+            {'+',add},
+            {'-', subtract},
+            {'/',divide},
+            {'*',multiply}
         };
 
-        static int Add(int num1, int num2)
+        static int add(int num1, int num2)
         {
             return num1 + num2;
         }
-        static int Subtract(int num1, int num2)
+        static int subtract(int num1, int num2)
         {
             return num1 - num2;
         }
-        static int Multiply(int num1, int num2)
+        static int multiply(int num1, int num2)
         {
             return num1 * num2;
         }
-        static int Divide(int num1, int num2)
+        static int divide(int num1, int num2)
         {
             return num1 / num2;
         }
