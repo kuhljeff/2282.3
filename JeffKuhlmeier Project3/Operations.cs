@@ -8,5 +8,8 @@ namespace JeffKuhlmeier_Project3
 {
     class Operations
     {
+        public Queue mathQueue = new Queue();
+        public Stack mathStack = new Stack();
+
     }
 }
