@@ -30,10 +30,8 @@ namespace JeffKuhlmeier_Project3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (displayTextBox.Text == string.Empty)
-                displayTextBox.Text = "0";
-            else
-                RPNCalc.CalculateRPN(displayTextBox.Text);
+            
+                displayTextBox.Text = dasInputCalc.CalculatedasInput(inputBox.Text).ToString();
 
         }
 
@@ -46,5 +44,6 @@ namespace JeffKuhlmeier_Project3
         {
 
         }
+
     }
 }

@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inputBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.displayTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // inputBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.inputBox.Location = new System.Drawing.Point(24, 26);
+            this.inputBox.Name = "inputBox";
+            this.inputBox.Size = new System.Drawing.Size(136, 20);
+            this.inputBox.TabIndex = 0;
+            this.inputBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -66,6 +66,7 @@
             // 
             this.displayTextBox.Location = new System.Drawing.Point(248, 26);
             this.displayTextBox.Name = "displayTextBox";
+            this.displayTextBox.ReadOnly = true;
             this.displayTextBox.Size = new System.Drawing.Size(100, 20);
             this.displayTextBox.TabIndex = 3;
             this.displayTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -89,7 +90,7 @@
             this.Controls.Add(this.displayTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inputBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -100,11 +101,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox inputBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox displayTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox displayTextBox;
     }
 }
 
