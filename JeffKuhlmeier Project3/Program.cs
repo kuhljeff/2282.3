@@ -4,6 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/***********************************
+ Reverse Polish Calculator (project 3) - JK
+This program takes input from the user
+ * in the reverse polish notation
+ * and calculates a result.
+*************************************/
+
 namespace JeffKuhlmeier_Project3
 {
     static class Program

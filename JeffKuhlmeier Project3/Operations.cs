@@ -8,9 +8,15 @@ namespace JeffKuhlmeier_Project3
 {
     class dasInputCalc : Form1
     {
-        internal static int CalculatedasInput(string dasInput)
+/***********************************
+calculateDasInput - JK
+This function takes das-Input which is
+in the form of reverse polish notation
+and evaluates it! 
+*************************************/
+        internal static int calculateDasInput(string dasInput)
         {
-            string[] dasToken = dasInput.Split(' ');
+            string[] dasToken = dasInput.Split(' '); //Works better than .trim() because this allows double digit calculations
             Stack<int> stack = new Stack<int>();
             int number = 0;
 
@@ -22,7 +28,7 @@ namespace JeffKuhlmeier_Project3
                 }
                 else
                 {
-                    switch (token)
+                    switch (token) 
                     {
                         case "*":
                             {
@@ -55,3 +61,15 @@ namespace JeffKuhlmeier_Project3
         }
     }
 }
+/***********************************
+ *cough*- JK
+Being in the web section has the 
+ * unfortunate consequence of 
+ * ambiguity when it comes to assignment
+ * expectations. In Exemplum:
+ * Do I build queue and stack classes from
+ * scratch, or do I "implement generic
+ * Stack and Queue classes" from 
+ * Systems.Collections.Generic...
+ * ramble,ramble...
+*************************************/

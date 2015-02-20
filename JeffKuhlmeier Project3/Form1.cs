@@ -27,11 +27,16 @@ namespace JeffKuhlmeier_Project3
         {
 
         }
-
+        /***********************************
+         Input button action -> click - JK
+        This function calls the calculateDasInput
+         * and puts the result in the display
+         * textbox.
+        *************************************/
         private void button1_Click(object sender, EventArgs e)
         {
             
-                displayTextBox.Text = dasInputCalc.CalculatedasInput(inputBox.Text).ToString();
+                displayTextBox.Text = dasInputCalc.calculateDasInput(inputBox.Text).ToString();
 
         }
 
