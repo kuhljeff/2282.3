@@ -15,6 +15,7 @@ namespace JeffKuhlmeier_Project3
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,7 +30,11 @@ namespace JeffKuhlmeier_Project3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.value.Trim();
+            if (displayTextBox.Text == string.Empty)
+                displayTextBox.Text = "0";
+            else
+                RPNCalc.CalculateRPN(displayTextBox.Text);
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
